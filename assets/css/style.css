@@ -106,6 +106,7 @@
     .work-wrap { 
       display: flex;
       flex-wrap: wrap;
+      justify-content: space-evenly;
     }
     .work-wrap > div {
       margin: 0 70px -200px 0;
@@ -114,14 +115,13 @@
       width: 100%;
       height: 40%;
       border: 5px solid #555;
-      box-shadow:  0 0 10px rgba(0, 0, 0, 0.8);;
+      box-shadow:  0 0 10px rgba(0, 0, 0, 0.8);
     }
     .pictext {
       font-size: 40px;
       color: white;
       position: relative;
       width: 250px;
-      vertical-align: bottom;
       bottom: 85px;
       left: 0px;
       background-color: #555;
@@ -166,17 +166,16 @@
       align-items: stretch;
       vertical-align: top;
     }
-    .con {
-      display: flex;
-      flex-wrap: wrap;
+    .con h3 {
+      display: inline-flex;
       justify-content: space-between;
       color: black;
-      font-size: 25px;
-      margin: 50px;
+      font-size: 1.55vw;
+      margin: 45px 35px 0 35px;
     }
     .contact-me {
       text-align: right;
-      padding: 0 40px 0 105px;
+      padding: 0 40px 0 107px;
       color: black;
       font-size: 50px;
       font-weight: bold;
