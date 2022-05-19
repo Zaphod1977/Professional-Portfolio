@@ -4,33 +4,34 @@
     box-sizing: border-box;
     }
     body {
-      /* more on this crazy alphanumerical value in a minute! */
       color: #39a6b2;
+      background-color: lightgray;
       font-family: Helvetica, Arial, sans-serif;
     }
     /* apply styles to <header> */
     header {
       padding: 20px 35px;
-      background-color: #39a6b2;
+      background-color: gray;
+      opacity: calc(100);
       position: sticky;  
       top: 0px;
-      z-index: 10;
+      z-index: 50;
     }
+    .name {
+      color: black;
+    }
+    
     header h1 {
       font-weight: bold;
-      font-size: 36px;
-      color: #fce138;
+      font-size: 40px;
+      color: rgba(66, 61, 61, 0.171);
       margin: 0;
       display: inline;
     }
   
     header a {
-      color: #fce138;
-    }
-  
-    header a {
       text-decoration: none;
-      color: #fce138;
+      color: black;
     }
   
     header nav {
@@ -70,53 +71,128 @@
     footer a {
       color: #024e76;
     }
+
+    /*about me section start*/
+    .aboutme {
+      padding: 80px;
+      display: flex;
+      align-items: stretch;
+      vertical-align: top;
+      background-color: lightgray;
+    }
+
+    .aboutme-rightside {
+      font-style: italic;
+      font-size: 15px;
+      padding: 0 50px 0 40px;
+      color: royalblue;
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      flex-grow: 20%;
+      text-align: left;
+    }
   
-    section {
-      padding: 60px;
+    .aboutme-leftside {
+      text-align:right;
+      padding: 0 40px 0 68px;
+      color: black;
+      font-size: 50px;
+      line-height: 1.2;
+      display: inline-block;
+      border-right: 3px solid;
+      border-color: black;
     }
-   /* what we do section */
-    .intro {
+    /*about me section end*/
+
+
+  /* work section begin */
+    .work {
       text-align: center;
+      background:  lightgray;
+      display: flex;
     }
-    .intro p {
-      line-height: 1.7;
-      color: #39a6b2;
-      width: 80%;
-      font-size: 20px;
-      margin: 0 auto;
-    }
-  /* what you do section */
-    .steps {
-      text-align: center;
-      background: #fce138;
-    }
-    .steps div {
+    /*
+    .work div {
       margin-bottom: 80px;
+    } */
+    .work img {
+      width: 60%;
+      margin: 0;
     }
-    .steps img {
-      width: 15%;
-      margin: 10px 0;
-    }
-    .steps h3 {
+    .work h3 {
       color: #024e76;
       font-size: 46px;
       margin-top: 10px;
     }
-    .steps p {
+    .work p {
       color: #39a6b2;
       font-size: 23px;
     }
-    .steps span {
+    .work span {
       font-size: 38px;
     }
-    .section-title {
+    .work-leftside {
+      font-size: 50px;
+      color: black;
+      margin: 35px; 
+      padding:  30px 40px 0 100px;
+      border-right: 3.5px solid;
+      border-color: black;
+    }
+    .work-rightside {
+      display: flex;  
+      flex-wrap: wrap;
+      align-items: right ;
       font-size: 55px;
       color: #024e76;
-      margin-bottom: 35px; 
-      padding: 0 100px 20px 100px;
-      display: inline-block;
-      border-bottom: 3px solid;
+      margin: 35px 0 35px 0; 
+      padding:  0;
     }
+    .work-wrap {
+      display: inline-flex;
+      flex-wrap: wrap;
+    }
+    .work-wrap > div {
+      margin: 0 78px 0 0;
+    }
+    .work-wrap img {
+      width: 100%;
+      height: 40%;
+      border: 5px solid #555;
+      box-shadow:  0 0 10px rgba(0, 0, 0, 0.8);;
+    }
+    .pictext {
+      font-size: 40px;
+      color: white;
+      position: relative;
+      width: 250px;
+      vertical-align: bottom;
+      bottom: 85px;
+      left: 0px;
+      background-color: #555;
+    }
+    .container img {
+      width: 98%;
+      height: auto;
+      border: 7px solid #555;
+      box-shadow:  0 0 10px rgba(0, 0, 0, 0.8);;
+    }
+    .container {
+      position: relative;
+      text-align: left;
+      vertical-align: bottom;
+      color: white;
+    }
+    .pictextt {
+      font-size: 40px;
+      position: relative;
+      width: 200px;
+      vertical-align: bottom;
+      bottom: 60px;
+      left: 0px;
+      background-color: #555;
+    }
+    /* work section end*/
+
     .primary-border {
       border-color: #fce138;
     }
@@ -167,14 +243,14 @@
     /* Hero Style Start */
     .hero {
       background-image: url("../Images/banner.jpg");
-      height: 600px;
+      height: 300px;
       background-size: cover;
       background-position: center;
       position: relative;
     }
     /* Hero Style End */
   
-    .hero-form {
+    /*.hero-form {
       border: 3px solid #024e76;
       background-color: #fce138;
       padding: 20px;
@@ -183,7 +259,7 @@
       position: absolute;
       bottom: 120px;
       right: 140px;
-    }
+    } */
   
     .hero-form h3 {
       font-size: 24px;
