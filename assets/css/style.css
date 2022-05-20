@@ -79,15 +79,15 @@
       border-color: black;
     }
     /*about me section end*/
-
-
-  /* work section begin */
+    
+    
+    /* work section begin */
     .work {
       text-align: center;
       background:  lightgray;
       display: flex;
     }
-
+    
     .work-leftside {
       font-size: 50px;
       color: black;
@@ -97,47 +97,23 @@
       border-color: black;
     }
     .work-rightside {
-      align-items: right ;
       font-size: 55px;
       color: #024e76;
-      margin: 35px 0 35px 0; 
+      margin: 35px 0 35px 2px; 
       padding:  0;
-    }
-    .work-wrap { 
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-evenly;
-    }
-    .work-wrap > div {
-      margin: 0 70px -200px 0;
-    }
-    .work-wrap img {
-      width: 100%;
-      height: 40%;
-      border: 5px solid #555;
-      box-shadow:  0 0 10px rgba(0, 0, 0, 0.8);
-    }
-    .pictext {
-      font-size: 40px;
-      color: white;
-      position: relative;
-      width: 250px;
-      bottom: 85px;
-      left: 0px;
-      background-color: #555;
-    }
-    .container img {
-      width: 98%;
-      height: auto;
-      border: 7px solid #555;
-      box-shadow:  0 0 10px rgba(0, 0, 0, 0.8);;
     }
     .container {
       position: relative;
       text-align: left;
       vertical-align: bottom;
       color: white;
-    }
+    } 
+    .container img {
+      width: 98%;
+      height: auto;
+      border: 7px solid #555;
+      box-shadow:  0 0 10px rgba(0, 0, 0, 0.8);;
+    } 
     .pictextt {
       font-size: 40px;
       position: relative;
@@ -145,6 +121,29 @@
       vertical-align: bottom;
       bottom: 60px;
       left: 0px;
+      background-color: #555;
+    }
+    .btmw {
+      display: inline-flex;
+      justify-content: space-evenly;
+    }
+    .btmw img {
+      width: 95%;
+      border: 5px solid #555; 
+      box-shadow:  0 0 10px rgba(0, 0, 0, 0.8);
+      margin: 0 15px 0 0;
+    }
+    .btmw image: :hover {
+      opacity: 1.0;
+    }
+    .pictext {
+      font-size: 40px;
+      text-align: left;
+      color: white;
+      position: relative;
+      width: 250px;
+      bottom: 85px;
+      left: 7px;
       background-color: #555;
     }
     /* work section end*/
