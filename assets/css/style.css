@@ -1,186 +1,215 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    }
-    body {
-      color: #39a6b2;
-      background-color: lightgray;
-      font-family: Helvetica, Arial, sans-serif;
-    }
-    /* apply styles to <header> */
-    header {
-      padding: 20px 35px;
-      background-color: gray;
-      opacity: calc(100);
-      position: sticky;  
-      top: 0px;
-      z-index: 50;
-    }
-    .name {
-      color: black;
-    }
-    
-    header h1 {
-      font-weight: bold;
-      font-size: 40px;
-      color: rgba(66, 61, 61, 0.171);
-      margin: 0;
-      display: inline;
-    }
-  
-    header a {
-      text-decoration: none;
-      color: black;
-    }
-  
-    header nav {
-      float: right;
-      margin: 7px 0;
-    }
-  
-    header nav ul li {
-      display: inline;
-    }
-  
-    header nav ul li a {
-      margin: 0 30px;
-      font-weight: lighter;
-      font-size: 22px;
-    }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    /*about me section start*/
-    .aboutme {
-      padding: 80px;
-      display: flex;
-      align-items: stretch;
-      vertical-align: top;
-      background-color: lightgray;
-    }
+body {
+  color: #39a6b2;
+  background-color: lightgray;
+  font-family: Helvetica, Arial, sans-serif;
+}
 
-    .aboutme-rightside {
-      font-style: italic;
-      font-size: 15px;
-      padding: 0 50px 0 40px;
-      color: royalblue;
-      text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-      flex-grow: 20%;
-      text-align: left;
-    }
-  
-    .aboutme-leftside {
-      text-align:right;
-      padding: 0 40px 0 68px;
-      color: black;
-      font-size: 50px;
-      line-height: 1.2;
-      display: inline-block;
-      border-right: 3px solid;
-      border-color: black;
-    }
-    /*about me section end*/
-    
-    
-    /* work section begin */
-    .work {
-      text-align: center;
-      background:  lightgray;
-      display: flex;
-    }
-    
-    .work-leftside {
-      font-size: 50px;
-      color: black;
-      margin: 35px; 
-      padding:  30px 40px 0 100px;
-      border-right: 3.5px solid;
-      border-color: black;
-    }
-    .work-rightside {
-      font-size: 55px;
-      color: #024e76;
-      margin: 35px 0 35px 2px; 
-      padding:  0;
-    }
-    .container {
-      position: relative;
-      text-align: left;
-      vertical-align: bottom;
-      color: white;
-    } 
-    .container img {
-      width: 98%;
-      height: auto;
-      border: 7px solid #555;
-      box-shadow:  0 0 10px rgba(0, 0, 0, 0.8);;
-    } 
-    .pictextt {
-      font-size: 40px;
-      position: relative;
-      width: 200px;
-      vertical-align: bottom;
-      bottom: 60px;
-      left: 0px;
-      background-color: #555;
-    }
-    .btmw {
-      display: inline-flex;
-      justify-content: space-evenly;
-    }
-    .btmw img {
-      width: 95%;
-      border: 5px solid #555; 
-      box-shadow:  0 0 10px rgba(0, 0, 0, 0.8);
-      margin: 0 15px 0 0;
-    }
-    .btmw image: :hover {
-      opacity: 1.0;
-    }
-    .pictext {
-      font-size: 40px;
-      text-align: left;
-      color: white;
-      position: relative;
-      width: 250px;
-      bottom: 85px;
-      left: 7px;
-      background-color: #555;
-    }
-    /* work section end*/
-  
-    /* Hero Style Start */
-    .hero {
-      background-image: url("../images/banner.jpg");
-      height: 300px;
-      background-size: cover;
-      background-position: center;
-      position: relative;
-    }
-    /* Hero Style End */
-  
-    /* Reach Out Style Start */
-  
-    .contact {
-      display: flex;
-      align-items: stretch;
-      vertical-align: top;
-    }
-    .con h3 {
-      display: inline-flex;
-      justify-content: space-between;
-      color: black;
-      font-size: 1.55vw;
-      margin: 45px 35px 0 35px;
-    }
-    .contact-me {
-      text-align: right;
-      padding: 0 40px 0 107px;
-      color: black;
-      font-size: 50px;
-      font-weight: bold;
-      line-height: 1.2;
-      border-right: 3.5px solid;
-      border-color: black;
-    }
-  
-    /* reach out styles end /*
+/* apply styles to <header> */
+header {
+  padding: 20px 35px;
+  background-color: gray;
+  opacity: calc(100);
+  position: sticky;
+  top: 0px;
+  z-index: 50;
+}
+
+#name {
+  color: black;
+  font-size: 1.75em;
+  width: 40%;
+  padding-left: 5%;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+header h1 {
+  font-weight: bold;
+  font-size: 40px;
+  color: rgba(66, 61, 61, 0.171);
+  margin: 0;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+}
+
+header nav {
+  float: right;
+  margin: 7px 0;
+}
+
+header nav ul li {
+  display: inline;
+}
+
+header nav ul li a {
+  margin: 0 30px;
+  font-weight: lighter;
+  font-size: 22px;
+}
+
+/*about me section start*/
+.aboutme {
+  padding: 80px;
+  display: flex;
+  align-items: stretch;
+  vertical-align: top;
+  background-color: lightgray;
+}
+
+.aboutme-rightside {
+  font-style: italic;
+  font-size: 15px;
+  padding: 0 50px 0 40px;
+  color: royalblue;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  flex-grow: 20%;
+  text-align: left;
+}
+
+.aboutme-leftside {
+  text-align: right;
+  padding: 0 40px 0 68px;
+  color: black;
+  font-size: 50px;
+  line-height: 1.2;
+  display: inline-block;
+  border-right: 3px solid;
+  border-color: black;
+}
+
+/*about me section end*/
+
+
+/* work section begin */
+.work {
+  text-align: center;
+  background: lightgray;
+  display: flex;
+}
+
+.work-leftside {
+  font-size: 50px;
+  color: black;
+  margin: 35px;
+  padding: 30px 40px 0 100px;
+  border-right: 3.5px solid;
+  border-color: black;
+}
+
+.work-rightside {
+  font-size: 55px;
+  color: #024e76;
+  margin: 35px 0 35px 2px;
+  padding: 0;
+}
+
+.container {
+  position: relative;
+  text-align: left;
+  vertical-align: bottom;
+  color: white;
+}
+
+.container img {
+  width: 98%;
+  height: auto;
+  border: 7px solid #555;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  ;
+}
+
+.pictextt {
+  font-size: 40px;
+  position: relative;
+  width: 200px;
+  vertical-align: bottom;
+  bottom: 60px;
+  left: 0px;
+  background-color: #555;
+}
+
+.btmw {
+  display: inline-flex;
+  justify-content: space-evenly;
+}
+
+.btmw img {
+  width: 95%;
+  border: 5px solid #555;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  margin: 0 23px 0 0;
+}
+
+.btmw image :hover {
+  opacity: 1.0;
+}
+
+.pictext {
+  font-size: 55%;
+  text-align: left;
+  padding: 0 0 0 5px;
+  color: white;
+  position: relative;
+  width: 70%;
+  bottom: 60px;
+  background-color: #555;
+}
+
+/* work section end*/
+
+/*
+     Hero Style Start */
+.hero {
+  background-image: url("../images/banner.jpg");
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+/* Hero Style End */
+
+/* Reach Out Style Start */
+
+#contact-section {
+  display: flex;
+  flex-direction: row;
+}
+
+#con {
+  display: flex;
+  /* justify-content: space-evenly; */
+  color: black;
+  font-size: 1.55vw;
+  margin: 45px 35px 0 35px;
+}
+
+#con a{
+  margin: 7%;
+}
+
+#contact-me {
+  text-align: right;
+  padding: 0 40px 0 107px;
+  color: black;
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 1.2;
+  border-right: 3.5px solid;
+  border-color: black;
+}
+
+/* reach out styles end /*
