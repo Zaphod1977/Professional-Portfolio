@@ -134,11 +134,12 @@ header nav ul li a {
 .pictextt {
   font-size: 40px;
   position: relative;
-  width: 200px;
+  width: 8em;
   vertical-align: bottom;
   bottom: 60px;
   left: 0px;
   background-color: #555;
+  padding: 0 0 0 .23em;
 }
 
 .btmw {
@@ -158,12 +159,12 @@ header nav ul li a {
 }
 
 .pictext {
-  font-size: 55%;
+  font-size: .45em;
   text-align: left;
   padding: 0 0 0 5px;
   color: white;
   position: relative;
-  width: 70%;
+  width: 9em;
   bottom: 60px;
   background-color: #555;
 }
