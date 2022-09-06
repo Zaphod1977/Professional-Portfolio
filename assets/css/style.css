@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+a {
+  text-decoration: none;
+}
 
 body {
   color: #39a6b2;
@@ -22,9 +25,10 @@ header {
 
 #name {
   color: black;
-  font-size: 1.75em;
+  font-size: 3em;
   width: 40%;
   padding-left: 5%;
+  font-weight: bold;
 }
 
 header {
@@ -71,12 +75,11 @@ header nav ul li a {
 
 .aboutme-rightside {
   font-style: italic;
-  font-size: 15px;
-  padding: 0 50px 0 40px;
+  font-size: 1.25em;
+  padding: 0 0 0 40px;
   color: royalblue;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  flex-grow: 20%;
-  text-align: left;
+  text-align: justify;
 }
 
 .aboutme-leftside {
@@ -114,6 +117,8 @@ header nav ul li a {
   color: #024e76;
   margin: 35px 0 35px 2px;
   padding: 0;
+  position:relative;
+  flex-grow: 1;
 }
 
 .container {
@@ -124,7 +129,7 @@ header nav ul li a {
 }
 
 .container img {
-  width: 98%;
+  width: 97%;
   height: auto;
   border: 7px solid #555;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
@@ -143,15 +148,19 @@ header nav ul li a {
 }
 
 .btmw {
-  display: inline-flex;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 97%;
+  justify-content: space-around;
+  gap: .89em;
 }
 
 .btmw img {
-  width: 95%;
+  width: 100%;
+  height: 18vw;
   border: 5px solid #555;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
-  margin: 0 23px 0 0;
+  margin: 0;
 }
 
 .btmw image :hover {
