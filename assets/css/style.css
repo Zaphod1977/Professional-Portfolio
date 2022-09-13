@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 a {
   text-decoration: none;
 }
@@ -11,6 +12,7 @@ body {
   color: #39a6b2;
   background-color: lightgray;
   font-family: Helvetica, Arial, sans-serif;
+  width: 100vw;
 }
 
 /* apply styles to <header> */
@@ -117,7 +119,7 @@ header nav ul li a {
   color: #024e76;
   margin: 35px 0 35px 2px;
   padding: 0;
-  position:relative;
+  position: relative;
   flex-grow: 1;
 }
 
@@ -207,7 +209,7 @@ header nav ul li a {
   margin: 45px 35px 0 35px;
 }
 
-#con a{
+#con a {
   margin: 7%;
 }
 
@@ -222,4 +224,110 @@ header nav ul li a {
   border-color: black;
 }
 
-/* reach out styles end /*
+html,
+body {
+  position: relative;
+}
+
+/* start media query here -  tablet devices */
+@media only screen and (max-width: 390px) {
+
+  header,
+
+  .hero {
+    width: 100%;
+    flex-direction: column;
+    height: 150px;
+  }
+
+  nav li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+  }
+
+  header nav ul li a {
+    margin:1em .45em 0 0;
+    padding: 0;
+  }
+
+  #name {
+    font-size: 2.2em;
+    margin: 0%;
+    padding-bottom: .25em;
+    padding-left: 0;
+  }
+
+  .aboutme {
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+
+  .aboutme-rightside{
+    padding: 1em;
+  }
+
+  .aboutme-leftside {
+    display: block;
+    text-align: center;
+    padding: .50em 0 0 0;
+    border-right: none;
+    font-size: 35px;
+  }
+
+  .work {
+    flex-direction: column;
+    max-width: 100%;
+    margin: 2%;
+
+  }
+
+  .work-leftside {
+    padding: 0;
+    margin: 0;
+    border-right: none;
+    font-size: 35px;
+  }
+
+  #contact-section {
+    flex-direction: column;
+  }
+
+  #contact-me {
+    text-align: center;
+    padding: 0;
+    border-right: none;
+    font-size: 35px;
+  } 
+
+  #contact-me div {
+    display: inline;
+  }
+
+  .pictext {
+    width: auto;
+    font-size: .25em;
+    bottom: 40px;
+  }
+
+  .btmw {
+    width: 100%;
+    gap: .25em;
+  }
+
+  .container img {
+    width: 100%;
+  }
+
+  #con {
+    font-size: .9em;
+    margin: 0;
+  }
+
+  #con a {
+    margin: .4em;
+  }
+}
+
+/* end media query here - tablet devices */
